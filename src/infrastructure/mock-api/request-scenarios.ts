@@ -6,7 +6,7 @@ export interface RequestScenarioConfig {
 
 class RequestScenarioManager {
   private config: RequestScenarioConfig = {
-    latencyMs: 200,
+    latencyMs: 2000,
     shouldFailNext: false,
     failureMessage: 'Simulated network failure. Please try again.',
   };
@@ -28,7 +28,7 @@ class RequestScenarioManager {
 
   reset(): void {
     this.config = {
-      latencyMs: 200,
+      latencyMs: 2000,
       shouldFailNext: false,
       failureMessage: 'Simulated network failure. Please try again.',
     };
